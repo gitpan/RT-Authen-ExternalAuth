@@ -27,6 +27,10 @@ feature 'SSO Cookie Sources' =>
     recommends('CGI::Cookie' => 0),
     ;
 
+author_tests('xt');
+
+requires_rt('3.8.2');
+
 &auto_install();
 
 &WriteAll;

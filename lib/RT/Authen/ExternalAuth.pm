@@ -1,6 +1,6 @@
 package RT::Authen::ExternalAuth;
 
-our $VERSION = '0.08_01';
+our $VERSION = '0.08_02';
 
 =head1 NAME
 
@@ -543,6 +543,15 @@ sub CanonicalizeUserInfo {
     ### should be honored in RT::User::Create()
     return($found || $RT::AutoCreateNonExternalUsers);
    
+}
+
+{
+    no warnings 'redefine';
+    *RT::User::CanonicalizeUserInfo = sub {
+        my $self = shift;
+        my $args = shift;
+        return ( CanonicalizeUserInfo( $self, $args ) );
+    };
 }
 
 1;
