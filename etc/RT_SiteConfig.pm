@@ -35,7 +35,7 @@ Set($AutoCreateNonExternalUsers,    0);
 # Note that you may have as many external services as you wish. They will
 # be checked in the order specified in the Priority directives above.
 # e.g. 
-#   Set(ExternalAuthPriority,['My_LDAP','My_MySQL','My_Oracle','SecondaryLDAP','Other-DB']);
+#   Set($ExternalAuthPriority,['My_LDAP','My_MySQL','My_Oracle','SecondaryLDAP','Other-DB']);
 #
 Set($ExternalSettings,      {   # AN EXAMPLE DB SERVICE
                                 'My_MySQL'   =>  {      ## GENERIC SECTION
@@ -130,6 +130,8 @@ Set($ExternalSettings,      {   # AN EXAMPLE DB SERVICE
                                                         'group'                     =>  'GROUP_NAME',
                                                         # What is the attribute for the group object that determines membership?
                                                         'group_attr'                =>  'GROUP_ATTR',
+                                                        # What is the attribute of the user entry that should be matched against group_attr above? (Optional; defaults to 'dn')
+                                                        'group_attr_value'          =>  'GROUP_ATTR_VALUE',
                                                         ## RT ATTRIBUTE MATCHING SECTION
                                                         # The list of RT attributes that uniquely identify a user
 							# This example shows what you *can* specify.. I recommend reducing this

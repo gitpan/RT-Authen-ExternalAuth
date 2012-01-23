@@ -1,6 +1,6 @@
 package RT::Authen::ExternalAuth;
 
-our $VERSION = '0.09';
+our $VERSION = '0.09_01';
 
 =head1 NAME
 
@@ -15,11 +15,119 @@ our $VERSION = '0.09';
   It also allows for authenticating cookie information against an
   external database through the use of the RT-Authen-CookieAuth extension.
 
-=begin testing
+=head1 UPGRADING
 
-ok(require RT::Authen::ExternalAuth);
+If you are upgrading from an earlier version of this extension, you must
+remove the following files manually:
 
-=end testing
+    $RTHOME/local/plugins/RT-Authen-ExternalAuth/lib/RT/User_Vendor.pm
+    $RTHOME/local/lib/RT/User_Vendor.pm
+    $RTHOME/local/lib/RT/Authen/External_Auth.pm
+
+Otherwise you will most likely encounter an error about modifying a read
+only value and be unable to start RT.
+
+You may not have all of these files.  It depends what versions you are
+upgrading between.
+
+If you are using a vendor packaged RT, your local directories are likely
+to be somewhere under /usr/local instead of in $RTHOME so you will need
+to visit Configuration -> Tools -> System Configuration to find your
+plugin root.
+
+=head2 VERSION NOTES
+
+If you are using RT 3.6, you want to use the 0.05 version.
+
+If you are using RT 3.8.0 or 3.8.1, you may have trouble using this
+due to RT bugs related to plugins, but you may be able to use 0.08.
+
+0.08_02 or later will not work on 3.8.0 or 3.8.1
+
+If you are using RT 4.0.0 or greater, you must use at least 0.09
+
+=head1 MORE ABOUT THIS MODULE 
+
+This module provides the ability to authenticate RT users
+against one or more external data sources at once. It will
+also allow information about that user to be loaded from
+the same, or any other available, source as well as allowing
+multple redundant servers for each method.
+
+The extension currently supports authentication and 
+information from LDAP via the Net::LDAP module, and from
+any data source that an installed DBI driver is available
+for. 
+
+It is also possible to use cookies set by an alternate
+application for Single Sign-On (SSO) with that application.
+For example, you may integrate RT with your own website login
+system so that once users log in to your website, they will be
+automagically logged in to RT when they access it.
+
+It was originally designed and tested against: 
+
+MySQL v4.1.21-standard
+MySQL v5.0.22
+Windows Active Directory v2003
+
+But it has been designed so that it should work with ANY
+LDAP service and ANY DBI-drivable database, based upon the
+configuration given in your $RTHOME/etc/RT_SiteConfig.pm
+
+As of v0.08 ExternalAuth also allows you to pull a browser
+cookie value and test it against a DBI data source allowing
+the use of cookies for Single Sign-On (SSO) authentication
+with another application or website login system. This is
+due to the merging of RT::Authen::ExternalAuth and
+RT::Authen::CookieAuth. For example, you may integrate RT
+with your own website login system so that once users log in
+to your website, they will be automagically logged in to RT 
+when they access it.
+
+
+=head1 INSTALLATION
+
+To install this module, run the following commands:
+
+    perl Makefile.PL
+    make
+    make install
+
+If you are using RT 3.8.x, you need to enable this
+module by adding RT::Authen::ExternalAuth to your
+@Plugins configuration:
+
+Set( @Plugins, qw(RT::Authen::ExternalAuth) );
+
+If you already have a @Plugins line, add RT::Authen::ExternalAuth to the
+existing list.  Adding a second @Plugins line will cause interesting
+bugs.
+
+Once installed, you should view the file:
+    
+3.4/3.6    $RTHOME/local/etc/ExternalAuth/RT_SiteConfig.pm
+3.8        $RTHOME/local/plugins/RT-Authen-ExternalAuth/etc/RT_SiteConfig.pm
+
+Then use the examples provided to prepare your own custom 
+configuration which should be added to your site configuration in
+$RTHOME/etc/RT_SiteConfig.pm
+
+=head1 AUTHOR
+        Mike Peachey
+        Jennic Ltd.
+        zordrak@cpan.org
+
+        Various Best Practical Developers
+
+=head1 COPYRIGHT AND LICENCE
+
+Copyright (C) 2008, Jennic Ltd.
+
+This software is released under version 2 of the GNU 
+General Public License. The license is distributed with
+this package in the LICENSE file found in the directory 
+root.
 
 =cut    
 
@@ -246,7 +354,7 @@ sub UpdateUserInfo {
     my $UserObj = RT::User->new($RT::SystemUser);
     $UserObj->Load($username);        
 
-    # If user is disabled, set the RT::Principle to disabled and return out of the function.
+    # If user is disabled, set the RT::Principal to disabled and return out of the function.
     # I think it's a waste of time and energy to update a user's information if they are disabled
     # and it could be a security risk if they've updated their external information with some 
     # carefully concocted code to try to break RT - worst case scenario, but they have been 
@@ -256,25 +364,32 @@ sub UpdateUserInfo {
     # then I'll update all the info for disabled users
 
     if ($user_disabled) {
-        # Make sure principle is disabled in RT
-        my ($val, $message) = $UserObj->SetDisabled(1);
-        # Log what has happened
-        $RT::Logger->info("User marked as DISABLED (",
-                            $username,
-                            ") per External Service", 
-                            "($val, $message)\n");
-        $msg = "User Disabled";
-        
+        unless ( $UserObj->Disabled ) {
+            # Make sure principal is disabled in RT
+            my ($val, $message) = $UserObj->SetDisabled(1);
+            # Log what has happened
+            $RT::Logger->info("User marked as DISABLED (",
+                                $username,
+                                ") per External Service", 
+                                "($val, $message)\n");
+            $msg = "User Disabled";
+        }
+
         return ($updated, $msg);
     }    
         
-    # Make sure principle is not disabled in RT
-    my ($val, $message) = $UserObj->SetDisabled(0);
-    # Log what has happened
-    $RT::Logger->info("User marked as ENABLED (",
-                        $username,
-                        ") per External Service",
+    # Make sure principal is not disabled in RT
+    if ( $UserObj->Disabled ) {
+        my ($val, $message) = $UserObj->SetDisabled(0);
+        unless ( $val ) {
+            $RT::Logger->error("Failed to enable user ($username) per External Service: ".($message||''));
+            return ($updated, "Failed to enable");
+        }
+
+        $RT::Logger->info("User ($username) was disabled, marked as ENABLED ",
+                        "per External Service",
                         "($val, $message)\n");
+    }
 
     # Update their info from external service using the username as the lookup key
     # CanonicalizeUserInfo will work out for itself which service to use
@@ -447,7 +562,7 @@ sub CanonicalizeUserInfo {
                         "called by", 
                         caller, 
                         "with:", 
-                        join(", ", map {sprintf("%s: %s", $_, $args->{$_})}
+                        join(", ", map {sprintf("%s: %s", $_, ($args->{$_} ? $args->{$_} : ''))}
                             sort(keys(%$args))));
 
     # Get the list of defined external services
@@ -533,7 +648,7 @@ sub CanonicalizeUserInfo {
 
     $RT::Logger->info(  (caller(0))[3], 
                         "returning", 
-                        join(", ", map {sprintf("%s: %s", $_, $args->{$_})} 
+                        join(", ", map {sprintf("%s: %s", $_, ($args->{$_} ? $args->{$_} : ''))}
                             sort(keys(%$args))));
 
     ### HACK: The config var below is to overcome the (IMO) bug in

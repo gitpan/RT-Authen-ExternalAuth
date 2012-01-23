@@ -1,0 +1,56 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.68.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 e631cf1f466df2a5ed1df3c285b463726e66a309 ChangeLog
+SHA1 3273dec18766d9445070e6758f2edcb3760599f9 LICENSE
+SHA1 34ba85e6437cd0f3df818e86a48212bc8a1413e9 MANIFEST
+SHA1 17d3b603b77ce802cb8569e1b6829671119b51e1 META.yml
+SHA1 0ca0d67f090dec04988dc1162ff1ec381b174de0 Makefile.PL
+SHA1 d2f2cedd3152f1b72e39fd0ab97760537869106c README
+SHA1 f9d98b6d907c33cddac990ed13bfbd3e9d1c5cf2 etc/RT_SiteConfig.pm
+SHA1 33c97c7f30b52fd18e11f6eaf275d21627a89050 html/Callbacks/ExternalAuth/Elements/Header/Head
+SHA1 3b536ec2292ce8e74cfe96f428048fb1f9589ae8 html/Callbacks/ExternalAuth/autohandler/Auth
+SHA1 41df883fbf679f22612ca75eeeaa8be090a2d2b4 html/Callbacks/ExternalAuth/autohandler/Session
+SHA1 777c9fd6d9955a410d94ada5d59830deb0cc9ba5 html/Elements/DoAuth
+SHA1 517832230e29ff1d48b465a5605d242dbb27f358 inc/Module/AutoInstall.pm
+SHA1 7ba8556ded0e1b8465b2ebe703e073b416d454d7 inc/Module/Install.pm
+SHA1 d001b4b9a48395a8c4134b234a0e1789138427c5 inc/Module/Install/AuthorTests.pm
+SHA1 5580f47c04e225825aa16235c63d57028251f76f inc/Module/Install/AutoInstall.pm
+SHA1 69a3a256888658cbbe0164171744838e53dc06e3 inc/Module/Install/Base.pm
+SHA1 17be8c56d695ed14cf77e37542438a5eebf1c9e1 inc/Module/Install/Can.pm
+SHA1 b842371af51441beb020ce37349f96123841f684 inc/Module/Install/Fetch.pm
+SHA1 29f6c217d420ca8c44977dad69a873c328ed6efc inc/Module/Install/Include.pm
+SHA1 474ff5d11d1dd3327487f13d44d3c7b3945050a8 inc/Module/Install/Makefile.pm
+SHA1 fdf68f7c27a463011640b0739299834a65268056 inc/Module/Install/Metadata.pm
+SHA1 086821cf681da29d7a7e94e8a6fe6cce7e14f00f inc/Module/Install/RTx.pm
+SHA1 d3a33569b41077d6a836f95bb63484c51e9d0a52 inc/Module/Install/ReadmeFromPod.pm
+SHA1 fe19e1641d3642424ba4088909e0f2e05747c76f inc/Module/Install/Win32.pm
+SHA1 b71a7355e7c74219f0d24aedf057121981ff0f95 inc/Module/Install/WriteAll.pm
+SHA1 b5a9f7b2b2d40eb0b3741ea0fac75d77d6b2b325 lib/RT/Authen/ExternalAuth.pm
+SHA1 de95ce02453c3232470b1519c6430ac1dd387439 lib/RT/Authen/ExternalAuth/DBI.pm
+SHA1 0abaeec5e8c2eb3e4b3862d0ac5b408dffa2a835 lib/RT/Authen/ExternalAuth/DBI/Cookie.pm
+SHA1 6681934e19b9d9628e8630f34eef1754582f4b60 lib/RT/Authen/ExternalAuth/LDAP.pm
+SHA1 3f17ced6f585867474b6f3a172bc34018704123c xt/ldap.t
+SHA1 d04dc38eb8b6a947ccb6b537043d1c7227ecc8ae xt/ldap_group.t
+SHA1 ddcb24f864e1a189320e1091dcafe56307c25324 xt/ldap_privileged.t
+SHA1 c229f65c585595c160ea1e2ab0fa69d6df29b602 xt/sqlite.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iD8DBQFPHZ3VHdv9ZfNcOAcRAoGUAJ96wwqafLaMcPprvtHQeJ0iJQya0QCfRJWH
+nV9+wLb/Sm2tXv79iyNfd9E=
+=xRR8
+-----END PGP SIGNATURE-----
