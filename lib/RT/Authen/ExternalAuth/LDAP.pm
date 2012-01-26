@@ -102,13 +102,16 @@ sub GetAuth {
                             : $ldap_entry->get_value($group_attr_val);
 
         # Fallback to the DN if the user record doesn't have a value
-        $group_val = $ldap_dn unless defined $group_val;
+        unless (defined $group_val) {
+            $group_val = $ldap_dn;
+            $RT::Logger->debug("Attribute '$group_attr_val' has no value; falling back to '$group_val'");
+        }
 
         $filter = Net::LDAP::Filter->new("(${group_attr}=" . escape_filter_value($group_val) . ")");
         
         $RT::Logger->debug( "LDAP Search === ",
                             "Base:",
-                            $base,
+                            $group,
                             "== Filter:", 
                             $filter->as_string,
                             "== Attrs:", 
@@ -133,6 +136,10 @@ sub GetAuth {
         }
 
         unless ($ldap_msg->count == 1) {
+            $RT::Logger->debug(
+                "LDAP group membership check returned",
+                $ldap_msg->count, "results"
+            );
             $RT::Logger->info(  $service,
                                 "AUTH FAILED:", 
                                 $username);
