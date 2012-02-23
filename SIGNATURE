@@ -14,10 +14,10 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 200ebb11069efc7be962c1b319f54d0c6208f21a ChangeLog
+SHA1 196a42f19555c0570c52c2f6aabf6908f066971b ChangeLog
 SHA1 3273dec18766d9445070e6758f2edcb3760599f9 LICENSE
 SHA1 e52bd37ec1f6e6edaa1ebe084f28ce29f6870557 MANIFEST
-SHA1 c7d279a9ca54035f74cf7091ffb4c58b6feae47c META.yml
+SHA1 7baba4c13b821291e142b2feda591c4f5f1a5cba META.yml
 SHA1 0ca0d67f090dec04988dc1162ff1ec381b174de0 Makefile.PL
 SHA1 d2f2cedd3152f1b72e39fd0ab97760537869106c README
 SHA1 f9d98b6d907c33cddac990ed13bfbd3e9d1c5cf2 etc/RT_SiteConfig.pm
@@ -39,19 +39,19 @@ SHA1 086821cf681da29d7a7e94e8a6fe6cce7e14f00f inc/Module/Install/RTx.pm
 SHA1 d3a33569b41077d6a836f95bb63484c51e9d0a52 inc/Module/Install/ReadmeFromPod.pm
 SHA1 fe19e1641d3642424ba4088909e0f2e05747c76f inc/Module/Install/Win32.pm
 SHA1 b71a7355e7c74219f0d24aedf057121981ff0f95 inc/Module/Install/WriteAll.pm
-SHA1 1fa38929efd307b1e4153083005baaeaf22b31a1 lib/RT/Authen/ExternalAuth.pm
+SHA1 49322607b3907f603d8f85b239fb39a0053a2e0d lib/RT/Authen/ExternalAuth.pm
 SHA1 de95ce02453c3232470b1519c6430ac1dd387439 lib/RT/Authen/ExternalAuth/DBI.pm
 SHA1 0abaeec5e8c2eb3e4b3862d0ac5b408dffa2a835 lib/RT/Authen/ExternalAuth/DBI/Cookie.pm
-SHA1 61650d541240889362b34024c3e5f4204d802918 lib/RT/Authen/ExternalAuth/LDAP.pm
+SHA1 e73585003cd42908f156ed3c2904c986bb182bef lib/RT/Authen/ExternalAuth/LDAP.pm
 SHA1 3f17ced6f585867474b6f3a172bc34018704123c xt/ldap.t
-SHA1 e72bae62fb108e940645a769289e65486a0ff9d9 xt/ldap_escaping.t
+SHA1 ee86914516fa28487c9844f147650fc282986e3a xt/ldap_escaping.t
 SHA1 d04dc38eb8b6a947ccb6b537043d1c7227ecc8ae xt/ldap_group.t
 SHA1 ddcb24f864e1a189320e1091dcafe56307c25324 xt/ldap_privileged.t
 SHA1 c229f65c585595c160ea1e2ab0fa69d6df29b602 xt/sqlite.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iD8DBQFPPoE6Hdv9ZfNcOAcRAmMnAJ4/RCRHS42ohm20uHVd7o/Ss4pp1QCePb+H
-PxFw7BxWPyI0wMyotNgxvL8=
-=Eoea
+iD8DBQFPRmmIHdv9ZfNcOAcRAu2EAKCimre5izOFPbEfIvZD8DX4pWD0QgCePjmF
+bx5s51spKnjJ0I1fjDFtaWY=
+=whKg
 -----END PGP SIGNATURE-----
