@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.69.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,11 +14,11 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 159c3749ce6311428488d7e85f5e91e520767b87 ChangeLog
+SHA1 e85c5db304160369ff06bf6270bfb995a8baa5b0 ChangeLog
 SHA1 3273dec18766d9445070e6758f2edcb3760599f9 LICENSE
 SHA1 f1b9253f28a0912f06d50bc39963e167d573ae66 MANIFEST
-SHA1 6d169a4a8e45f9e359bc7571f4609da9b2de283e MANIFEST.SKIP
-SHA1 2cce3d444343a5b1ec9af4d15e929259b3ad1fe6 META.yml
+SHA1 4f9a3da777764252acf6d92741bcebf505857527 MANIFEST.SKIP
+SHA1 0bc01f62eee50f137e431d6d5922cfcc544dd90f META.yml
 SHA1 0ca0d67f090dec04988dc1162ff1ec381b174de0 Makefile.PL
 SHA1 d2f2cedd3152f1b72e39fd0ab97760537869106c README
 SHA1 e28ce6a91c577c1c088a04ded01ace3fd89753f2 etc/RT_SiteConfig.pm
@@ -36,11 +36,11 @@ SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
 SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
 SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
 SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
-SHA1 b4d94769c55faf719ae5636f2eb4e674afa303f4 inc/Module/Install/RTx.pm
-SHA1 a3cff7ab08b95ee312b7e9381eb72f42e309c842 inc/Module/Install/ReadmeFromPod.pm
+SHA1 43b47fb3c5ec06b71bb175258c8c1b2aaf8a10ab inc/Module/Install/RTx.pm
+SHA1 dc94326a076aca41452c1d65bf52a255feeb9ef7 inc/Module/Install/ReadmeFromPod.pm
 SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
 SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
-SHA1 4bcb56464e3f118f864b6541d6439d726b18d2a7 lib/RT/Authen/ExternalAuth.pm
+SHA1 e7fb4e438ac6a1ffbbd2b5d5db6bb7a2420ee8f0 lib/RT/Authen/ExternalAuth.pm
 SHA1 de95ce02453c3232470b1519c6430ac1dd387439 lib/RT/Authen/ExternalAuth/DBI.pm
 SHA1 0abaeec5e8c2eb3e4b3862d0ac5b408dffa2a835 lib/RT/Authen/ExternalAuth/DBI/Cookie.pm
 SHA1 424a9a873ef7cb86b1566f1504e8afae4ecb9d7a lib/RT/Authen/ExternalAuth/LDAP.pm
@@ -53,7 +53,7 @@ SHA1 c229f65c585595c160ea1e2ab0fa69d6df29b602 xt/sqlite.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iD8DBQFQiutZHdv9ZfNcOAcRAg73AJ4nelwyzslUWwT7bBOCfT6CmOqHewCcCPwO
-ZxkSLPzk3d8BaAtbksgnKLg=
-=k1MX
+iD8DBQFRCsQSHdv9ZfNcOAcRAq3LAJ9Y32cyJ1K1+fWg037mlIMZuY6JaACeMYRY
+92C1m42VGsXqvNhtId0SZXY=
+=lfLa
 -----END PGP SIGNATURE-----
