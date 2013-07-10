@@ -14,11 +14,11 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 8ecf1a426bfc2e3caef0c542b4cdd74031f369fe ChangeLog
+SHA1 cfe3142cdbf8f86cc03be3f4eb3cd3cae1b06873 ChangeLog
 SHA1 3273dec18766d9445070e6758f2edcb3760599f9 LICENSE
 SHA1 98ea631b21f3e3274640e1f31e2007a2a9dc48d0 MANIFEST
 SHA1 4f9a3da777764252acf6d92741bcebf505857527 MANIFEST.SKIP
-SHA1 043b8a4bed26e48f31ce3b5fdd48d00893e8c286 META.yml
+SHA1 809c99a5cc6b3d2392511b34edf9a0128d1561f8 META.yml
 SHA1 0ca0d67f090dec04988dc1162ff1ec381b174de0 Makefile.PL
 SHA1 27ac5a59afa8b9a8692f389004588cf321a44cff README
 SHA1 562e0a56a45b5bdcd47e852e679607a90b3c764b etc/RT_SiteConfig.pm
@@ -40,7 +40,7 @@ SHA1 5f63805513cf3214069df32f21457c674dda05cc inc/Module/Install/RTx.pm
 SHA1 dc94326a076aca41452c1d65bf52a255feeb9ef7 inc/Module/Install/ReadmeFromPod.pm
 SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
 SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
-SHA1 cdf130284d37c3ce64bb7b6e6b437da2a38e5bf8 lib/RT/Authen/ExternalAuth.pm
+SHA1 1ab671600740a9678f8c6a005af048e778ff1de8 lib/RT/Authen/ExternalAuth.pm
 SHA1 d333da0857524eead272bfb13b874b6fb221ae89 lib/RT/Authen/ExternalAuth/DBI.pm
 SHA1 71d7b21728c9e4a19599f0caefb7f795e8e210f5 lib/RT/Authen/ExternalAuth/DBI/Cookie.pm
 SHA1 42085a2bb6463c71d2ceafe0576cdf06057bf9e9 lib/RT/Authen/ExternalAuth/LDAP.pm
@@ -48,13 +48,13 @@ SHA1 c303682ddca0d93d4e5f7fed11780accd049d46b xt/ldap.t
 SHA1 b25dd9decd2d40809666a1b97a1fcfcc7d1bd52d xt/ldap_escaping.t
 SHA1 b973fa7f2055bcf678fa27ffb9b7e260bda93bc6 xt/ldap_group.t
 SHA1 4c5256cf749b29a1fe345343d2fd7c6b93b79dfd xt/ldap_privileged.t
-SHA1 a7f284ba9478f304b07c577b11e143c45edd3b59 xt/obfuscate-password.t
+SHA1 e97f3d74032286ca82fd3c01ea78147010667a89 xt/obfuscate-password.t
 SHA1 8f2c25091c32c94c4fdd2024195ec1619a762bc0 xt/sessions.t
 SHA1 c229f65c585595c160ea1e2ab0fa69d6df29b602 xt/sqlite.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iD8DBQFRzJEpHdv9ZfNcOAcRAtYkAJ91YP+wYXcsxEL5++HDCGK36cyF7QCeJfpa
-sq0F8ByetN4OtzO135nr88A=
-=B4li
+iD8DBQFR3bkFHdv9ZfNcOAcRAn67AJ9pKs6kPWkyMmRb4TeQVhXTNTheoQCgoQzk
+zgW2lvukxrKDTxPXM0zWbCs=
+=DlOZ
 -----END PGP SIGNATURE-----
