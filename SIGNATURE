@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.69.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,14 +14,14 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 cfe3142cdbf8f86cc03be3f4eb3cd3cae1b06873 ChangeLog
+SHA1 b24a8028c52a5423418b3a38bcdef99436ec276a ChangeLog
 SHA1 3273dec18766d9445070e6758f2edcb3760599f9 LICENSE
 SHA1 98ea631b21f3e3274640e1f31e2007a2a9dc48d0 MANIFEST
 SHA1 4f9a3da777764252acf6d92741bcebf505857527 MANIFEST.SKIP
-SHA1 809c99a5cc6b3d2392511b34edf9a0128d1561f8 META.yml
+SHA1 c735cb1bb6a62903137132c6f571dc840ecd1586 META.yml
 SHA1 0ca0d67f090dec04988dc1162ff1ec381b174de0 Makefile.PL
 SHA1 27ac5a59afa8b9a8692f389004588cf321a44cff README
-SHA1 562e0a56a45b5bdcd47e852e679607a90b3c764b etc/RT_SiteConfig.pm
+SHA1 878725f4674ee99e512b077726b538e0e2699c82 etc/RT_SiteConfig.pm
 SHA1 33c97c7f30b52fd18e11f6eaf275d21627a89050 html/Callbacks/ExternalAuth/Elements/Header/Head
 SHA1 3b536ec2292ce8e74cfe96f428048fb1f9589ae8 html/Callbacks/ExternalAuth/autohandler/Auth
 SHA1 3f6bfd07c642fec5c2553ed97414c82a19b6107a html/Callbacks/ExternalAuth/autohandler/Session
@@ -36,25 +36,26 @@ SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
 SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
 SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
 SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
-SHA1 5f63805513cf3214069df32f21457c674dda05cc inc/Module/Install/RTx.pm
-SHA1 dc94326a076aca41452c1d65bf52a255feeb9ef7 inc/Module/Install/ReadmeFromPod.pm
+SHA1 3f9e335a7fd57b7e27d7f6e4bdc7076dcc6dfc8c inc/Module/Install/RTx.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
 SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
 SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
-SHA1 1ab671600740a9678f8c6a005af048e778ff1de8 lib/RT/Authen/ExternalAuth.pm
+SHA1 529a88745627cf4d4883bea2385bab2a89fe3af5 lib/RT/Authen/ExternalAuth.pm
 SHA1 d333da0857524eead272bfb13b874b6fb221ae89 lib/RT/Authen/ExternalAuth/DBI.pm
 SHA1 71d7b21728c9e4a19599f0caefb7f795e8e210f5 lib/RT/Authen/ExternalAuth/DBI/Cookie.pm
 SHA1 42085a2bb6463c71d2ceafe0576cdf06057bf9e9 lib/RT/Authen/ExternalAuth/LDAP.pm
-SHA1 c303682ddca0d93d4e5f7fed11780accd049d46b xt/ldap.t
-SHA1 b25dd9decd2d40809666a1b97a1fcfcc7d1bd52d xt/ldap_escaping.t
-SHA1 b973fa7f2055bcf678fa27ffb9b7e260bda93bc6 xt/ldap_group.t
-SHA1 4c5256cf749b29a1fe345343d2fd7c6b93b79dfd xt/ldap_privileged.t
+SHA1 43212d5284b9885e21f193c24f70e1ecfe84ff2f xt/ldap.t
+SHA1 98828af03131d63d502145f4f03f550a1ea47fa0 xt/ldap_escaping.t
+SHA1 767315675c4efb476ef607c3d2eaa832ab0b4ed9 xt/ldap_group.t
+SHA1 3c09dffc83aca3717304274aef6c1ad30c69b6e2 xt/ldap_privileged.t
 SHA1 e97f3d74032286ca82fd3c01ea78147010667a89 xt/obfuscate-password.t
 SHA1 8f2c25091c32c94c4fdd2024195ec1619a762bc0 xt/sessions.t
 SHA1 c229f65c585595c160ea1e2ab0fa69d6df29b602 xt/sqlite.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.11 (GNU/Linux)
+Version: GnuPG v1.4.12 (Darwin)
+Comment: GPGTools - http://gpgtools.org
 
-iD8DBQFR3bkFHdv9ZfNcOAcRAn67AJ9pKs6kPWkyMmRb4TeQVhXTNTheoQCgoQzk
-zgW2lvukxrKDTxPXM0zWbCs=
-=DlOZ
+iEYEARECAAYFAlMaRYwACgkQ0+gKWp5CJQqUngCaAvagO4xlXAj/80JsB/GCLV1+
+VfEAoJI5spf381gLf72ExzkgxC3C6vYX
+=WCNR
 -----END PGP SIGNATURE-----
