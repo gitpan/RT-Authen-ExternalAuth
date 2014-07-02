@@ -14,14 +14,14 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 22c3cf41e4af9d6b79bcdb2de84e72f27c576fb7 ChangeLog
+SHA1 274a6390b5a42c612e46119b42db5029e492a59e ChangeLog
 SHA1 3273dec18766d9445070e6758f2edcb3760599f9 LICENSE
-SHA1 98ea631b21f3e3274640e1f31e2007a2a9dc48d0 MANIFEST
+SHA1 9490b8aa196586990eafa4d5814af06dc5f2be5e MANIFEST
 SHA1 4f9a3da777764252acf6d92741bcebf505857527 MANIFEST.SKIP
-SHA1 04cf60cc276ff60a31309835c1d8be79e1871ac4 META.yml
-SHA1 0ca0d67f090dec04988dc1162ff1ec381b174de0 Makefile.PL
-SHA1 27ac5a59afa8b9a8692f389004588cf321a44cff README
-SHA1 0597d7d33254e0dc1293f981b54d87309aae483e etc/RT_SiteConfig.pm
+SHA1 39f37528cf1ff7790d320792a7f48aae9890d42e META.yml
+SHA1 764dcc0c77ebd0e25f40d80bcd5a2e1c8191f900 Makefile.PL
+SHA1 bc36d5030f59901701a1f9b78f732eac6043f8b2 README
+SHA1 b9e0608faec3f90687ecf5fb2cbac21eb2befcca etc/RT_SiteConfig.pm
 SHA1 33c97c7f30b52fd18e11f6eaf275d21627a89050 html/Callbacks/ExternalAuth/Elements/Header/Head
 SHA1 3b536ec2292ce8e74cfe96f428048fb1f9589ae8 html/Callbacks/ExternalAuth/autohandler/Auth
 SHA1 3f6bfd07c642fec5c2553ed97414c82a19b6107a html/Callbacks/ExternalAuth/autohandler/Session
@@ -36,14 +36,17 @@ SHA1 363c8931cc183444907684b71d6a379e4fc8edcb inc/Module/Install/Fetch.pm
 SHA1 0c70de66cdd063352766d49db176e5f710f75fe7 inc/Module/Install/Include.pm
 SHA1 26ae1c0f5f352037b560414f216d7e3ac682f936 inc/Module/Install/Makefile.pm
 SHA1 ff97eb025b44c343d026c2a56a73d50c65319e95 inc/Module/Install/Metadata.pm
-SHA1 ef78e932fb1b2b87e0c8d10f1086907d4b3638dd inc/Module/Install/RTx.pm
+SHA1 3b092ed8ce4fa9ed6667f681b54f4a624695e508 inc/Module/Install/RTx.pm
+SHA1 3fdf4c0cffdb1a2e23e5cd26bf95be553f1f9590 inc/Module/Install/RTx/Runtime.pm
 SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
 SHA1 4c5ce519d404e242418f51dfe761287469e18e3a inc/Module/Install/Win32.pm
 SHA1 47a52cf8719a283c0efa2edab0088b5d67e0f23a inc/Module/Install/WriteAll.pm
-SHA1 28ee582fbed68e8586b202379f49c59695acb970 lib/RT/Authen/ExternalAuth.pm
+SHA1 4e09b598c2626e08cec2bed5e981492fa9e90967 inc/YAML/Tiny.pm
+SHA1 034d0f3a7401dae4be3eee279258181f51a4ad81 inc/unicore/Name.pm
+SHA1 10d9d0730f9e492941ff77cb20e6ac0cef3c8128 lib/RT/Authen/ExternalAuth.pm
 SHA1 d333da0857524eead272bfb13b874b6fb221ae89 lib/RT/Authen/ExternalAuth/DBI.pm
 SHA1 71d7b21728c9e4a19599f0caefb7f795e8e210f5 lib/RT/Authen/ExternalAuth/DBI/Cookie.pm
-SHA1 4ad043054d40edac4dfe148e4ad66f7a81ed176d lib/RT/Authen/ExternalAuth/LDAP.pm
+SHA1 da0b7908668e7a7e30ebe553212ce8f3ceff18de lib/RT/Authen/ExternalAuth/LDAP.pm
 SHA1 43212d5284b9885e21f193c24f70e1ecfe84ff2f xt/ldap.t
 SHA1 98828af03131d63d502145f4f03f550a1ea47fa0 xt/ldap_escaping.t
 SHA1 767315675c4efb476ef607c3d2eaa832ab0b4ed9 xt/ldap_group.t
@@ -55,7 +58,7 @@ SHA1 c229f65c585595c160ea1e2ab0fa69d6df29b602 xt/sqlite.t
 Version: GnuPG v1.4.12 (Darwin)
 Comment: GPGTools - http://gpgtools.org
 
-iEYEARECAAYFAlNFoJIACgkQ0+gKWp5CJQoxsQCbBEITZMk4VuzOD7xXaUUJK/0q
-tfkAn35qmVuguUbafKlgWmfh402d2Qk/
-=uVKH
+iEYEARECAAYFAlOzbEsACgkQ0+gKWp5CJQrJOQCgz7VoZbc4S+Qhy5l7GjTw73E0
+uBAAnRndGv1GHR0JDUO6+A8ZyHTm0gcz
+=NQV+
 -----END PGP SIGNATURE-----
