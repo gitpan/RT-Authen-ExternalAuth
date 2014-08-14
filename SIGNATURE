@@ -14,14 +14,13 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 274a6390b5a42c612e46119b42db5029e492a59e ChangeLog
+SHA1 02394ba1ec0c520bd53e7aa2a634484b54a11a28 ChangeLog
 SHA1 3273dec18766d9445070e6758f2edcb3760599f9 LICENSE
-SHA1 9490b8aa196586990eafa4d5814af06dc5f2be5e MANIFEST
+SHA1 19e109da47e9fddfff5aa316915acbe21c175700 MANIFEST
 SHA1 4f9a3da777764252acf6d92741bcebf505857527 MANIFEST.SKIP
-SHA1 39f37528cf1ff7790d320792a7f48aae9890d42e META.yml
-SHA1 764dcc0c77ebd0e25f40d80bcd5a2e1c8191f900 Makefile.PL
-SHA1 bc36d5030f59901701a1f9b78f732eac6043f8b2 README
-SHA1 b9e0608faec3f90687ecf5fb2cbac21eb2befcca etc/RT_SiteConfig.pm
+SHA1 4926c188a9a425a23a5c01492aaba3ebc5957dc6 META.yml
+SHA1 3bded9dffe91ed80fb28c3eeb633c65eb807d6da Makefile.PL
+SHA1 a09a1dc64660b830cdc7928d81156e161961d3fd README
 SHA1 33c97c7f30b52fd18e11f6eaf275d21627a89050 html/Callbacks/ExternalAuth/Elements/Header/Head
 SHA1 3b536ec2292ce8e74cfe96f428048fb1f9589ae8 html/Callbacks/ExternalAuth/autohandler/Auth
 SHA1 3f6bfd07c642fec5c2553ed97414c82a19b6107a html/Callbacks/ExternalAuth/autohandler/Session
@@ -43,22 +42,21 @@ SHA1 4c5ce519d404e242418f51dfe761287469e18e3a inc/Module/Install/Win32.pm
 SHA1 47a52cf8719a283c0efa2edab0088b5d67e0f23a inc/Module/Install/WriteAll.pm
 SHA1 4e09b598c2626e08cec2bed5e981492fa9e90967 inc/YAML/Tiny.pm
 SHA1 034d0f3a7401dae4be3eee279258181f51a4ad81 inc/unicore/Name.pm
-SHA1 10d9d0730f9e492941ff77cb20e6ac0cef3c8128 lib/RT/Authen/ExternalAuth.pm
+SHA1 3da3a025370e96d76e9a0f288bb73ae68edde107 lib/RT/Authen/ExternalAuth.pm
 SHA1 d333da0857524eead272bfb13b874b6fb221ae89 lib/RT/Authen/ExternalAuth/DBI.pm
 SHA1 71d7b21728c9e4a19599f0caefb7f795e8e210f5 lib/RT/Authen/ExternalAuth/DBI/Cookie.pm
-SHA1 da0b7908668e7a7e30ebe553212ce8f3ceff18de lib/RT/Authen/ExternalAuth/LDAP.pm
-SHA1 43212d5284b9885e21f193c24f70e1ecfe84ff2f xt/ldap.t
-SHA1 98828af03131d63d502145f4f03f550a1ea47fa0 xt/ldap_escaping.t
-SHA1 767315675c4efb476ef607c3d2eaa832ab0b4ed9 xt/ldap_group.t
-SHA1 3c09dffc83aca3717304274aef6c1ad30c69b6e2 xt/ldap_privileged.t
+SHA1 a7cbdd3ee9a448e99888ef9fbe418f57778c8ad6 lib/RT/Authen/ExternalAuth/LDAP.pm
+SHA1 f8945f8859ff7c53e9e0e366f54e6ec483674e83 xt/ldap.t
+SHA1 9b1656e947f2a59f0251582503d1752dbf1ad85f xt/ldap_escaping.t
+SHA1 1a4e26ff4a820fc7a856598fa3e38131a6953506 xt/ldap_group.t
+SHA1 4b0e4614d63ad0d12e51ea44600d8eb6b102fcf7 xt/ldap_privileged.t
 SHA1 e97f3d74032286ca82fd3c01ea78147010667a89 xt/obfuscate-password.t
-SHA1 83d28e80fd93774fdf224236fa5b284b27f1beea xt/sessions.t
-SHA1 c229f65c585595c160ea1e2ab0fa69d6df29b602 xt/sqlite.t
+SHA1 f050c619336def037bccef9e7e4f9baf71b2f3a0 xt/sessions.t
+SHA1 2c18aacfc5a462553b8e2c30a8ac98d30401386a xt/sqlite.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.12 (Darwin)
-Comment: GPGTools - http://gpgtools.org
+Version: GnuPG v1.4.11 (GNU/Linux)
 
-iEYEARECAAYFAlOzbEsACgkQ0+gKWp5CJQrJOQCgz7VoZbc4S+Qhy5l7GjTw73E0
-uBAAnRndGv1GHR0JDUO6+A8ZyHTm0gcz
-=NQV+
+iEYEARECAAYFAlPr+UcACgkQMflWJZZAbqCMEACfZr3/NIbew1OUD8Q0qL054kzU
+k7EAoIhaXLDbdF88DMkMzyUs3oIJfJDN
+=8x/E
 -----END PGP SIGNATURE-----
